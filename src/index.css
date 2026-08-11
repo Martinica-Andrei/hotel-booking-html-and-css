@@ -111,6 +111,8 @@ button:hover {
 
 #header {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 0;
     width: 100%;
     z-index: 999;
@@ -145,8 +147,8 @@ button:hover {
     background-color: inherit;
     width: 100%;
     height: 100%;
-    padding: 10px;
-    overflow:auto;
+    padding: 10px 10px 0px;
+    overflow: auto;
 }
 
 #menu-content {
@@ -226,6 +228,10 @@ footer {
 
 footer br {
     margin-bottom: 5px;
+}
+
+footer .copyright{
+    margin-bottom: 0;
 }
 
 /* Booking status
