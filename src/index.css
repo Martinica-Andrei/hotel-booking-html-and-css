@@ -104,6 +104,10 @@ ul {
     box-shadow: 3px 3px 3px gray;
 }
 
+.price {
+    font-family: dm-mono, sans-serif;
+}
+
 /* Header
 ------------------------------------------------------------------ */
 
@@ -292,30 +296,48 @@ ul {
     padding: 20px 0;
 }
 
-.receipt-card .dates .date-item{
+.receipt-card .dates .date-item {
     text-align: center;
 }
 
-.receipt-card .dates .check{
+.receipt-card .dates .check {
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.receipt-card .dates time{
+.receipt-card .dates time {
     font-weight: 500;
     font-size: 2rem;
     font-family: fraunces, sans-serif;
 }
 
-.receipt-card .dates time div{
+.receipt-card .dates time div {
     font-size: 0.8rem;
     font-family: dm-sans, sans-serif;
     font-weight: normal;
 }
 
-.receipt-card table{
+.receipt-card table {
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 15px;
 }
 
-.price{
-    font-family: dm-mono, sans-serif   ;
+.receipt-card tr {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.receipt-card tr:has(.total-description){
+    border-top: 1px solid var(--Neutral-900);
+    padding-top:20px;
+}
+
+.receipt-card .total-description{
+    font-size:1.2rem;
+}
+
+.receipt-card .total{
+    font-size: 1.5rem;
 }
