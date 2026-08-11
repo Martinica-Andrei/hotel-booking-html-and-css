@@ -366,3 +366,61 @@ ul {
     text-transform: uppercase;
     color: var(--Neutral-700)
 }
+
+/* Details section 
+------------------------------------------------------------------ */
+
+.details-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.details-item {
+    flex-basis: 300px;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+    background-color: var(--Neutral-100);
+    padding: 15px;
+}
+
+.details-item header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--details-color);
+}
+
+.details-item header .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.details-item .number{
+    font-size: 1.3rem;
+    font-family: fraunces, sans-serif;
+
+}
+
+.details-item h3 {
+    margin: 0;
+}
+
+.details-item img {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--details-color);
+}
+
+.details-item.arrival {
+    --details-color: var(--Terracotta-700);
+}
+
+.details-item.wifi {
+    --details-color: var(--Blue-500);
+}
+
+.details-item.breakfast {
+    --details-color: var(--Rose-500);
+}
