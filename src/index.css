@@ -264,6 +264,7 @@ ul {
     font-size: 1rem;
     font-weight: normal;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .receipt-card .header {
@@ -285,6 +286,7 @@ ul {
     align-items: end;
     gap: 5px;
     font-family: dm-mono, sans-serif;
+    color: var(--Neutral-700);
 }
 
 .receipt-card .header .right p {
@@ -306,6 +308,8 @@ ul {
 .receipt-card .dates .check {
     margin-top: 0;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    color: var(--Neutral-700);
 }
 
 .receipt-card .dates time {
@@ -318,6 +322,7 @@ ul {
     font-size: 0.8rem;
     font-family: dm-sans, sans-serif;
     font-weight: normal;
+    color: var(--Neutral-700);
 }
 
 .receipt-card table {
@@ -339,6 +344,7 @@ ul {
 
 .receipt-card .total-description {
     font-size: 1.2rem;
+    color: var(--Neutral-700);
 }
 
 .receipt-card .total {
