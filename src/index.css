@@ -143,6 +143,15 @@ button:hover {
     width: 100%;
     height: 100%;
     padding: 10px;
+    overflow: auto;
+}
+
+#menu-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #menu nav ul {
@@ -157,21 +166,54 @@ button:hover {
     color: var(--Neutral-800);
     font-size: 1rem;
     display: flex;
-    gap:10px;
-    padding:10px;
+    gap: 10px;
+    padding: 10px;
     border-radius: 5px;
 }
 
-#menu nav a:target{
+#menu nav a:target {
     background-color: var(--Neutral-0);
     color: var(--Neutral-900);
     font-weight: bold;
 }
 
-#menu nav a:hover:not(:target){
+#menu nav a:hover:not(:target) {
     transform: translate(5px);
     font-weight: bold;
 }
+
+#menu .weather {
+    position: relative;
+    padding: 5px;
+    border-radius: 20px;
+    background-image: radial-gradient(circle at top right, var(--Sun-300), var(--Sun-200));
+    max-width: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: var(--Neutral-800);
+}
+
+#menu .weather .sun-img {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
+#menu .weather p {
+    margin: 8px;
+}
+
+#menu .weather-announcement {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#menu .weather-degrees {
+    font-family: fraunces, sans-serif;
+    font-size: 2rem;
+    color: var(--Neutral-900);
+}
+
 
 /* Booking status
 ------------------------------------------------------------------ */
@@ -236,6 +278,7 @@ button:hover {
 ------------------------------------------------------------------ */
 
 .welcome-card {
+    position: relative;
     background-image: radial-gradient(circle at top right,
             var(--Terracotta-400),
             var(--Terracotta-500),

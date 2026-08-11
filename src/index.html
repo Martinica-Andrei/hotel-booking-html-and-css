@@ -21,30 +21,33 @@
                     class="fa-solid fa-bars"></i></button>
         </div>
         <dialog id="menu" aria-label="menu">
-            <nav>
-                <ul>
-                    <li><a href="#stay" id="stay"><i class="fa-solid fa-bed"></i> Your stay</a></li>
-                    <li><a href="#house" id="house"><i class="fa-solid fa-house"></i> The house</a></li>
-                    <li><a href="#town" id="town"><i class="fa-solid fa-location-dot"></i> Around town</a></li>
-                    <li><a href="#breakfast" id="breakfast"><i class="fa-solid fa-bell-concierge"></i> Breakfast</a>
-                    </li>
-                    <li><a href="#messages" id="messages"><i class="fa-regular fa-envelope"></i> Messages</a></li>
-                </ul>
-            </nav>
-            <div>
-                <section>
-                    <p>Today in Cassis</p>
-                    <p>27°</p>
-                    <p>Sunny <span aria-hidden="true">·</span> light breeze</p>
-                </section>
-                <footer role="contentinfo">
-                    <address>
-                        EST. 1997<br>
-                        <span>Maison Soleil <span aria-hidden="true">·</span> 12 Rue Des Oliviers <span
-                                aria-hidden="true">·</span> Cassis</span>
-                    </address>
-                    <p class="copyright">2026 Maison Soleil</p>
-                </footer>
+            <div id="menu-content">
+                <nav>
+                    <ul>
+                        <li><a href="#stay" id="stay"><i class="fa-solid fa-bed"></i> Your stay</a></li>
+                        <li><a href="#house" id="house"><i class="fa-solid fa-house"></i> The house</a></li>
+                        <li><a href="#town" id="town"><i class="fa-solid fa-location-dot"></i> Around town</a></li>
+                        <li><a href="#breakfast" id="breakfast"><i class="fa-solid fa-bell-concierge"></i> Breakfast</a>
+                        </li>
+                        <li><a href="#messages" id="messages"><i class="fa-regular fa-envelope"></i> Messages</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <section class="weather">
+                        <img class="sun-img" src="../assets/images/icon-weather.svg" alt="">
+                        <p class="weather-announcement">Today in Cassis</p>
+                        <p class="weather-degrees">27°</p>
+                        <p class="weather-description">Sunny <span aria-hidden="true">·</span> light breeze</p>
+                    </section>
+                    <footer role="contentinfo">
+                        <address>
+                            EST. 1997<br>
+                            <span>Maison Soleil <span aria-hidden="true">·</span> 12 Rue Des Oliviers <span
+                                    aria-hidden="true">·</span> Cassis</span>
+                        </address>
+                        <p class="copyright">2026 Maison Soleil</p>
+                    </footer>
+                </div>
             </div>
         </dialog>
     </header>
