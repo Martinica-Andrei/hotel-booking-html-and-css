@@ -26,33 +26,43 @@
         </ul>
     </section>
 
-    <section>
-        <h2>Bienvenue, <span>Lucia</span></h2>
-        <button type="button">Print receipt</button>
-        <button type="button">Add to calendar</button>
+    <section class="hello-section">
+        <h2>Bienvenue, <span>Lucia.</span></h2>
+        <div class="buttons">
+            <button type="button" class="btn btn-one">Print receipt</button>
+            <button type="button" class="btn btn-two">Add to calendar</button>
+        </div>
     </section>
 
-    <div>
-        <section>
+    <div class="cards-section">
+        <section class="welcome-card">
+            <img class="sun-img" src="../assets/images/icon-sun.svg" alt="">
             <h2>Welcome Card</h2>
-            <p>A note from your host,</p>
-            <p>Margaux.</p>
-            <p>We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre -
-                pretending not to notice you.</p>
-            <p>Room</p>
-            <p>La Garrigue</p>
-        </section>
-        <section>
             <div>
-                <div>
-                    <h2>Receipt</h2>
-                    <p>Your stay</p>
-                </div>
-                <p>No MS-2026</p>
-                <p>0421 - AH</p>
+                <p class="host-note">A note from your host,</p>
+                <p class="host">Margaux.</p>
+                <p class="content">We're so glad you're coming. The shutters will be open, the lemonade cold, and the
+                    cat - Poivre -
+                    pretending not to notice you.</p>
             </div>
             <div>
-                <div>
+                <p class="room">Room</p>
+                <p class="room-name">La Garrigue</p>
+            </div>
+        </section>
+        <section class="receipt-card">
+            <div class="header">
+                <div> 
+                    <h2>Receipt</h2>
+                    <p class="your-stay">Your stay</p>
+                </div>
+                <div class="right">
+                    <p>No MS-2026</p>
+                    <p>0421 - AH</p>
+                </div>
+            </div>
+            <div class="dates">
+                <div class="date-item">
                     <p>Check in</p>
                     <time datetime="04-25-06:15:00">25 Apr Saturday <span aria-hidden="true">·</span> 15:00</time>
                 </div>

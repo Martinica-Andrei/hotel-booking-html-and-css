@@ -2,7 +2,7 @@
 ------------------------------------------------------------------ */
 
 :root {
-    box-sizing: border;
+    box-sizing: border-box;
 
     --Neutral-900: hsl(33, 15%, 15%);
     --Neutral-800: hsl(33, 22%, 20%);
@@ -39,6 +39,7 @@ body {
     background-color: var(--Neutral-200);
     padding: 0;
     margin: 0;
+    font-family: dm-sans, sans-serif;
 }
 
 ul {
@@ -66,12 +67,49 @@ ul {
     cursor: pointer
 }
 
+.btn {
+    border-radius: 15px;
+    width: 170px;
+    height: 45px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-one {
+    background-color: var(--Neutral-100);
+    color: var(--Neutral-900);
+    border: 0;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.btn-one:hover {
+    box-shadow: 3px 3px 3px gray;
+    background-color: var(--Neutral-900);
+    color: var(--Neutral-200);
+}
+
+.btn-two {
+    background-color: var(--Neutral-900);
+    color: var(--Neutral-200);
+    border: 0;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.btn-two:hover {
+    background-color: var(--Neutral-100);
+    color: var(--Neutral-900);
+    box-shadow: 3px 3px 3px gray;
+}
+
 /* Header
 ------------------------------------------------------------------ */
 
 #header {
-    position:sticky;
-    top:0;
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -84,8 +122,7 @@ ul {
 /* Booking status
 ------------------------------------------------------------------ */
 
-.booking-status{
-    font-family: dm-mono, sans-serif;
+.booking-status {
     text-transform: uppercase;
     font-size: 0.75rem;
     color: var(--Neutral-600);
@@ -97,7 +134,7 @@ ul {
     padding: 0;
     display: flex;
     gap: 10px;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 .booking-status li:nth-of-type(n + 2)::marker {
@@ -107,3 +144,142 @@ ul {
 .booking-status li:nth-of-type(n + 2) {
     padding-left: 5px;
 }
+
+/* Hello section 
+------------------------------------------------------------------ */
+
+.hello-section h2 {
+    margin: 0 0 15px 10px;
+    font-size: 2.5rem;
+}
+
+.hello-section h2 span {
+    color: var(--Terracotta-700);
+    font-style: italic;
+}
+
+.hello-section .buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Cards section 
+------------------------------------------------------------------ */
+
+.cards-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    row-gap: 15px;
+}
+
+/* Welcome card 
+------------------------------------------------------------------ */
+
+.welcome-card {
+    background-image: radial-gradient(circle at top right,
+            var(--Terracotta-400),
+            var(--Terracotta-500),
+            var(--Terracotta-600),
+            var(--Terracotta-700));
+    padding: 15px;
+    border-radius: 10px;
+    transform: rotate(3deg);
+    max-width: 300px;
+    font-family: fraunces, sans-serif;
+    min-height: 400px;
+    box-shadow: -10px 10px 3px gray;
+    color: var(--Neutral-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid gray;
+}
+
+.welcome-card .sun-img {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+.welcome-card h2 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-top: 1px dashed var(--Neutral-100);
+    padding-top: 10px;
+}
+
+.welcome-card .host-note {
+    font-size: 1.2rem;
+    color: var(--Sun-500);
+    margin-bottom: 0.7rem;
+}
+
+.welcome-card .host {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+}
+
+.welcome-card .content {
+    color: var(--Neutral-0);
+}
+
+.welcome-card .room {
+    margin-bottom: 0;
+}
+
+.welcome-card .room-name {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+/* Receipt card 
+------------------------------------------------------------------ */
+
+.receipt-card {
+    min-height: 400px;
+    max-width: 400px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, var(--Neutral-0) 90%, var(--Neutral-400));
+    transform: rotate(-3deg);
+    padding: 10px;
+    box-shadow: 10px 10px 3px gray;
+    border: 1px solid gray;
+}
+
+.receipt-card h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.receipt-card .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--Neutral-900);
+}
+
+.receipt-card .your-stay {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.receipt-card .header .right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap:5px;
+}
+
+.receipt-card .header .right p {
+    margin: 0;
+}
+
