@@ -83,12 +83,13 @@ ul {
     color: var(--Neutral-900);
     border: 0;
     box-shadow: 1px 1px 3px gray;
+    transition: all 0.3s;
 }
 
 .btn-one:hover {
-    box-shadow: 3px 3px 3px gray;
-    background-color: var(--Neutral-900);
-    color: var(--Neutral-200);
+    box-shadow: 3px 3px 3px 3px gray;
+    background-color: var(--Neutral-200);
+    transform: scale(1.05);
 }
 
 .btn-two {
@@ -96,12 +97,13 @@ ul {
     color: var(--Neutral-200);
     border: 0;
     box-shadow: 1px 1px 3px gray;
+    transition: all 0.3s;
 }
 
 .btn-two:hover {
-    background-color: var(--Neutral-100);
-    color: var(--Neutral-900);
-    box-shadow: 3px 3px 3px gray;
+    background-color: var(--Neutral-800);
+    box-shadow: 3px 3px 3px 3px gray;
+    transform: scale(1.05);
 }
 
 .price {
