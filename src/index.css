@@ -110,21 +110,21 @@ button:hover {
 ------------------------------------------------------------------ */
 
 #header {
-    position:fixed;
-    top:0;
-    width:100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 999;
     padding: 15px;
     border-bottom: 1px solid var(--Neutral-400);
     background-color: var(--Neutral-200);
 }
 
-.header-full{
+.header-full {
     height: 100vh;
 }
 
-.overflow-hidden{
-    overflow:hidden;
+.overflow-hidden {
+    overflow: hidden;
 }
 
 #header-content {
@@ -138,10 +138,27 @@ button:hover {
     position: static;
     border: 0;
     border-top: 1px solid var(--Neutral-400);
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: inherit;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+#menu nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#menu nav a {
+    text-decoration: none;
+    color: var(--Neutral-800);
+    font-size: 1rem;
+    display: flex;
+    gap:10px;
+    padding:5px;
 }
 
 /* Booking status
@@ -152,7 +169,7 @@ button:hover {
     font-size: 0.75rem;
     color: var(--Neutral-600);
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 90px;
 }
 
 .booking-status ul {
