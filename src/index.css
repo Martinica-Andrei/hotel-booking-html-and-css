@@ -402,10 +402,10 @@ ul {
     gap: 10px;
 }
 
-.details-item .number{
+.details-item .number {
     font-size: 1.3rem;
     font-family: fraunces, sans-serif;
-
+    margin: 0;
 }
 
 .details-item h3 {
