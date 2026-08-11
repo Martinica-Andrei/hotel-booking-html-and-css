@@ -148,6 +148,7 @@ button:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
+    padding: 10px;
 }
 
 #menu-content {
@@ -229,7 +230,7 @@ footer br {
     margin-bottom: 5px;
 }
 
-footer .copyright{
+footer .copyright {
     margin-bottom: 0;
 }
 
