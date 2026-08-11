@@ -34,8 +34,11 @@
     box-sizing: inherit;
 }
 
-body{
+body {
     font-size: 0.875rem;
+    background-color: var(--Neutral-200);
+    padding: 0;
+    margin: 0;
 }
 
 .sr-only {
@@ -49,5 +52,24 @@ body{
     border: 0;
 }
 
+.show-menu-btn {
+    width: 20px;
+    height: 25px;
+    font-size: 1rem;
+}
+
+.show-menu-btn:hover {
+    cursor: pointer
+}
+
 /* Header
 ------------------------------------------------------------------ */
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--Neutral-400);
+}
