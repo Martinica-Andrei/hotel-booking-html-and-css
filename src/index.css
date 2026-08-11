@@ -190,7 +190,7 @@ ul {
     padding: 15px;
     border-radius: 10px;
     transform: rotate(3deg);
-    max-width: 300px;
+    flex-basis: 320px;
     font-family: fraunces, sans-serif;
     min-height: 400px;
     box-shadow: -10px 10px 3px gray;
@@ -244,7 +244,7 @@ ul {
 
 .receipt-card {
     min-height: 400px;
-    max-width: 400px;
+    flex-basis: 320px;
     border-radius: 10px;
     background-image: linear-gradient(to top, var(--Neutral-0) 90%, var(--Neutral-400));
     transform: rotate(-3deg);
@@ -277,6 +277,7 @@ ul {
     flex-direction: column;
     align-items: end;
     gap: 5px;
+    font-family: dm-mono, sans-serif;
 }
 
 .receipt-card .header .right p {
@@ -310,4 +311,11 @@ ul {
     font-size: 0.8rem;
     font-family: dm-sans, sans-serif;
     font-weight: normal;
+}
+
+.receipt-card table{
+}
+
+.price{
+    font-family: dm-mono, sans-serif   ;
 }
