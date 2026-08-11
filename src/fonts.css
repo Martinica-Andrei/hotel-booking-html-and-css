@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "dm-mono";
+    src: url("../assets/fonts/dm-mono/DMMono-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "dm-mono";
+    src: url("../assets/fonts/dm-mono/DMMono-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "dm-sans";
+    src: url("../assets/fonts/dm-sans/DMSans-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+    font-family: "fraunces";
+    src: url("../assets/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "fraunces";
+    src: url("../assets/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
