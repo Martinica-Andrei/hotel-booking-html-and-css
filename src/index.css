@@ -266,7 +266,7 @@ ul {
 }
 
 .receipt-card .your-stay {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1.4rem;
     margin-top: 0;
     margin-bottom: 16px;
@@ -276,10 +276,38 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap:5px;
+    gap: 5px;
 }
 
 .receipt-card .header .right p {
     margin: 0;
 }
 
+.receipt-card .dates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--Neutral-900);
+    padding: 20px 0;
+}
+
+.receipt-card .dates .date-item{
+    text-align: center;
+}
+
+.receipt-card .dates .check{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.receipt-card .dates time{
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: fraunces, sans-serif;
+}
+
+.receipt-card .dates time div{
+    font-size: 0.8rem;
+    font-family: dm-sans, sans-serif;
+    font-weight: normal;
+}
