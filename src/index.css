@@ -329,15 +329,31 @@ ul {
     margin-top: 10px;
 }
 
-.receipt-card tr:has(.total-description){
+.receipt-card tr:has(.total-description) {
     border-top: 1px solid var(--Neutral-900);
-    padding-top:20px;
+    padding-top: 20px;
 }
 
-.receipt-card .total-description{
-    font-size:1.2rem;
+.receipt-card .total-description {
+    font-size: 1.2rem;
 }
 
-.receipt-card .total{
+.receipt-card .total {
     font-size: 1.5rem;
+}
+
+.receipt-card .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.receipt-card .tags {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 0 5px;
+    padding: 0;
+    font-style: dm-sans, sans-serif;
+    text-transform: uppercase;
+    color: var(--Neutral-700)
 }
