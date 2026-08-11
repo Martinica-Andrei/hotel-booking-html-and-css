@@ -143,9 +143,9 @@ button:hover {
     position: static;
     border: 0;
     border-top: 1px solid var(--Neutral-400);
+    margin:0;
     margin-top: 20px;
     background-color: inherit;
-    width: 100%;
     flex: 1 1 0;
     overflow: auto;
     padding: 10px;
