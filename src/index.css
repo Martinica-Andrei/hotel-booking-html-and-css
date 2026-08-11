@@ -143,13 +143,13 @@ button:hover {
     position: static;
     border: 0;
     border-top: 1px solid var(--Neutral-400);
-    margin:0;
+    margin: 0;
     margin-top: 20px;
     background-color: inherit;
     flex: 1 1 0;
     overflow: auto;
     padding: 10px;
-    width:100%;
+    width: 100%;
 }
 
 #menu-content {
@@ -287,11 +287,23 @@ footer .copyright {
 .cards-section {
     margin-top: 30px;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     padding: 0 20px;
     row-gap: 15px;
+}
+
+@media screen and (min-width:800px) {
+    .cards-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .welcome-card {
+        order: 1;
+    }
 }
 
 /* Welcome card 
@@ -307,7 +319,8 @@ footer .copyright {
     padding: 15px;
     border-radius: 10px;
     transform: rotate(3deg);
-    flex-basis: 320px;
+    max-width: 320px;
+    width: 100%;
     font-family: fraunces, sans-serif;
     min-height: 400px;
     box-shadow: -10px 10px 3px gray;
@@ -364,7 +377,8 @@ footer .copyright {
 
 .receipt-card {
     min-height: 400px;
-    flex-basis: 320px;
+    max-width: 320px;
+    width: 100%;
     border-radius: 10px;
     background-image: linear-gradient(to top, var(--Neutral-0) 90%, var(--Neutral-400));
     transform: rotate(-3deg);
