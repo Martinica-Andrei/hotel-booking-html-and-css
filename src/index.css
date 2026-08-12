@@ -2,8 +2,6 @@
 ------------------------------------------------------------------ */
 
 :root {
-    box-sizing: border-box;
-
     --Neutral-900: hsl(33, 15%, 15%);
     --Neutral-800: hsl(33, 22%, 20%);
     --Neutral-700: hsl(32, 20%, 29%);
@@ -31,7 +29,7 @@
 *,
 ::before,
 ::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
@@ -40,6 +38,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: dm-sans, sans-serif;
+    box-sizing: content-box;
 }
 
 ul {
@@ -235,6 +234,14 @@ footer .copyright {
     margin-bottom: 0;
 }
 
+/* Body right 
+------------------------------------------------------------------ */
+
+body .right{
+    flex: 1 1 0;
+}
+
+
 /* Booking status
 ------------------------------------------------------------------ */
 
@@ -243,7 +250,7 @@ footer .copyright {
     font-size: 0.75rem;
     color: var(--Neutral-600);
     font-weight: 500;
-    margin-top: 90px;
+    margin-top: 110px;
 }
 
 .booking-status ul {
@@ -502,7 +509,7 @@ footer .copyright {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin: 40px 0 30px 0;
+    margin: 40px 0 30px;
     padding: 5px;
 }
 
@@ -590,4 +597,41 @@ footer .copyright {
     border-radius: 5px;
     color: var(--Neutral-900);
     border: 1px solid gray;
+}
+
+/* Media
+------------------------------------------------------------------ */
+
+@media screen and (min-width:1000px) {
+    body{
+        display: flex;
+    }
+
+    .show-menu-btn {
+        display: none;
+    }
+
+    .booking-status{
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size:0.9rem;
+    }
+
+    .hello-section{
+        padding: 0 40px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #header {
+        position:sticky;
+        width: auto;
+        border-right: 1px solid var(--Neutral-400);
+        height: 100vh;
+    }
+
+    #menu {
+        display: block;
+    }
 }
