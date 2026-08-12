@@ -109,7 +109,7 @@ button:hover {
 ------------------------------------------------------------------ */
 
 #header {
-    position: fixed;
+    position: sticky;
     display: flex;
     flex-direction: column;
     top: 0;
@@ -250,7 +250,7 @@ body .right{
     font-size: 0.75rem;
     color: var(--Neutral-600);
     font-weight: 500;
-    margin-top: 110px;
+    margin-top: 20px;
 }
 
 .booking-status ul {
@@ -510,8 +510,8 @@ body .right{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin: 40px 0 30px;
-    padding: 5px;
+    margin: 40px 0 0;
+    padding: 5px 5px 40px;
 }
 
 .details-item {
@@ -633,7 +633,6 @@ body .right{
     }
 
     .booking-status{
-        margin-top: 20px;
         margin-left: 30px;
         font-size:0.9rem;
     }
