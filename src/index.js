@@ -12,6 +12,7 @@ const toggleMenu = (e) =>{
     }
     else{
         menu.show();
+        menu.scrollTop = 0;
         header.classList.add(headerClass);
         document.documentElement.classList.add(overflowHiddenClass);
     }
