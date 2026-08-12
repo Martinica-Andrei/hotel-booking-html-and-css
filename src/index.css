@@ -300,19 +300,6 @@ body .right{
     row-gap: 15px;
 }
 
-@media screen and (min-width:800px) {
-    .cards-section {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
-        justify-content: center;
-    }
-
-    .welcome-card {
-        order: 1;
-    }
-}
-
 /* Welcome card 
 ------------------------------------------------------------------ */
 
@@ -621,6 +608,20 @@ body .right{
 
 /* Media
 ------------------------------------------------------------------ */
+
+@media screen and (min-width:800px) {
+    .cards-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .welcome-card {
+        order: 1;
+    }
+}
+
 
 @media screen and (min-width:1000px) {
     body{
