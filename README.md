@@ -33,6 +33,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- A bit of javascript
 - Flexbox
 - Mobile-first design
 - Font awesome
