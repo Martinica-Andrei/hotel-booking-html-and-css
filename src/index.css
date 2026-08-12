@@ -656,3 +656,9 @@ body .right{
         display: block;
     }
 }
+
+@media (prefers-reduced-motion: reduce){
+    *{
+        transition-duration: 0s !important;
+    }
+}
