@@ -53,154 +53,159 @@
         </dialog>
     </header>
 
-    <section class="booking-status" aria-label="Booking status">
-        <ul>
-            <li>Booking</li>
-            <li>Confirmed</li>
-        </ul>
-    </section>
+    <div>
+        <section class="booking-status" aria-label="Booking status">
+            <ul>
+                <li>Booking</li>
+                <li>Confirmed</li>
+            </ul>
+        </section>
 
-    <section class="hello-section">
-        <h2>Bienvenue, <span>Lucia.</span></h2>
-        <div class="buttons">
-            <button type="button" class="btn btn-one">Print receipt</button>
-            <button type="button" class="btn btn-two">Add to calendar</button>
-        </div>
-    </section>
-
-    <section class="cards-section" aria-label="Cards">
-        <section class="welcome-card">
-            <img class="sun-img" src="../assets/images/icon-sun.svg" alt="">
-            <h2>Welcome Card</h2>
-            <div>
-                <p class="host-note">A note from your host,</p>
-                <p class="host">Margaux.</p>
-                <p class="content">We're so glad you're coming. The shutters will be open, the lemonade cold, and the
-                    cat - Poivre -
-                    pretending not to notice you.</p>
-            </div>
-            <div>
-                <p class="room">Room</p>
-                <p class="room-name">La Garrigue</p>
+        <section class="hello-section">
+            <h2>Bienvenue, <span>Lucia.</span></h2>
+            <div class="buttons">
+                <button type="button" class="btn btn-one">Print receipt</button>
+                <button type="button" class="btn btn-two">Add to calendar</button>
             </div>
         </section>
-        <section class="receipt-card">
-            <div class="header">
+
+        <section class="cards-section" aria-label="Cards">
+            <section class="welcome-card">
+                <img class="sun-img" src="../assets/images/icon-sun.svg" alt="">
+                <h2>Welcome Card</h2>
                 <div>
-                    <h2>Receipt</h2>
-                    <p class="your-stay">Your stay</p>
+                    <p class="host-note">A note from your host,</p>
+                    <p class="host">Margaux.</p>
+                    <p class="content">We're so glad you're coming. The shutters will be open, the lemonade cold, and
+                        the
+                        cat - Poivre -
+                        pretending not to notice you.</p>
                 </div>
-                <div class="right">
-                    <p>No MS-2026</p>
-                    <p>0421 - AH</p>
+                <div>
+                    <p class="room">Room</p>
+                    <p class="room-name">La Garrigue</p>
                 </div>
-            </div>
-            <div class="dates">
-                <div class="date-item">
-                    <p class="check">Check in</p>
-                    <time datetime="04-25-06:15:00">25 Apr
-                        <div>Saturday <span aria-hidden="true">·</span> 15:00</div>
-                    </time>
+            </section>
+            <section class="receipt-card">
+                <div class="header">
+                    <div>
+                        <h2>Receipt</h2>
+                        <p class="your-stay">Your stay</p>
+                    </div>
+                    <div class="right">
+                        <p>No MS-2026</p>
+                        <p>0421 - AH</p>
+                    </div>
                 </div>
-                <div class="date-item">
-                    <p class="check">Check out</p>
-                    <time datetime="04-29-03:11:00">29 Apr
-                        <div>Wednesday <span aria-hidden="true">·</span> 11:00</div>
-                    </time>
+                <div class="dates">
+                    <div class="date-item">
+                        <p class="check">Check in</p>
+                        <time datetime="04-25-06:15:00">25 Apr
+                            <div>Saturday <span aria-hidden="true">·</span> 15:00</div>
+                        </time>
+                    </div>
+                    <div class="date-item">
+                        <p class="check">Check out</p>
+                        <time datetime="04-29-03:11:00">29 Apr
+                            <div>Wednesday <span aria-hidden="true">·</span> 11:00</div>
+                        </time>
+                    </div>
                 </div>
-            </div>
-            <table>
-                <caption class="sr-only">Payment summary</caption>
-                <thead class="sr-only">
-                    <tr>
-                        <th>Description</th>
-                        <th>Amount</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Room <span aria-hidden="true">·</span> La Garrigue x 4 nights</td>
-                        <td class="price">€ 620.00</td>
-                    </tr>
-                    <tr>
-                        <td>Breakfast x 2 guests</td>
-                        <td class="price">€ 96.00</td>
-                    </tr>
-                    <tr>
-                        <td>Tourist tax</td>
-                        <td class="price">€ 14.40</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td class="total-description">Total paid</td>
-                        <td class="price total">€ 730.40</td>
-                    </tr>
-                </tfoot>
-            </table>
-            <div class="footer">
-                <ul class="tags">
-                    <li>Paid</li>
-                    <li>Wise</li>
-                    <li>Gbp</li>
-                </ul>
-                <img class="barcode" src="../assets/images/icon-barcode.svg" alt="Barcode">
-            </div>
+                <table>
+                    <caption class="sr-only">Payment summary</caption>
+                    <thead class="sr-only">
+                        <tr>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Room <span aria-hidden="true">·</span> La Garrigue x 4 nights</td>
+                            <td class="price">€ 620.00</td>
+                        </tr>
+                        <tr>
+                            <td>Breakfast x 2 guests</td>
+                            <td class="price">€ 96.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tourist tax</td>
+                            <td class="price">€ 14.40</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="total-description">Total paid</td>
+                            <td class="price total">€ 730.40</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="footer">
+                    <ul class="tags">
+                        <li>Paid</li>
+                        <li>Wise</li>
+                        <li>Gbp</li>
+                    </ul>
+                    <img class="barcode" src="../assets/images/icon-barcode.svg" alt="Barcode">
+                </div>
+            </section>
         </section>
-    </section>
-    <section class="details-section" aria-label="Details">
-        <h2 class="sr-only">Stay Details</h2>
-        <ul>
-            <li class="details-item arrival">
-                <section>
-                    <header>
-                        <div class="left">
-                            <img src="../assets/images/icon-key.svg" alt="">
-                            <h3>Arrival</h3>
-                        </div>
-                        <p class="number">01</p>
-                    </header>
-                    <p class="title">Check-in from 15:00</p>
-                    <time class="sub-title" datetime="04-25-06">Sat, 25 April</time>
-                    <p class="description">Ring the brass bell by the blue door. If we're at the market, the key is in
-                        the terracotta
-                        pot by the olive tree.</p>
-                </section>
-            </li>
-            <li class="details-item wifi">
-                <section>
-                    <header>
-                        <div class="left">
-                            <img src="../assets/images/icon-wifi.svg" alt="">
-                            <h3>Wifi</h3>
-                        </div>
-                        <p class="number">02</p>
-                    </header>
-                    <p class="title">Le Soleil <span aria-hidden="true">·</span> Guest</p>
-                    <p class="sub-title">Password below</p>
-                    <p class="description">Network <span>Le Soleil <span aria-hidden="true">·</span> Guest</span></p>
-                    <p class="description">Password <span>soleil-2026 <button type="button"
-                                class="copy-btn">Copy</button></span></p>
-                </section>
-            </li>
-            <li class="details-item breakfast">
-                <section>
-                    <header>
-                        <div class="left">
-                            <img src="../assets/images/icon-breakfast.svg" alt="">
-                            <h3>Breakfast</h3>
-                        </div>
-                        <p class="number">03</p>
-                    </header>
-                    <p class="title">Served 8 - 10:30</p>
-                    <p class="sub-title">On the terrace</p>
-                    <p class="description">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free
-                        option? Leave a note
-                        the night before.</p>
-                </section>
-            </li>
-        </ul>
-    </section>
+        <section class="details-section" aria-label="Details">
+            <h2 class="sr-only">Stay Details</h2>
+            <ul>
+                <li class="details-item arrival">
+                    <section>
+                        <header>
+                            <div class="left">
+                                <img src="../assets/images/icon-key.svg" alt="">
+                                <h3>Arrival</h3>
+                            </div>
+                            <p class="number">01</p>
+                        </header>
+                        <p class="title">Check-in from 15:00</p>
+                        <time class="sub-title" datetime="04-25-06">Sat, 25 April</time>
+                        <p class="description">Ring the brass bell by the blue door. If we're at the market, the key is
+                            in
+                            the terracotta
+                            pot by the olive tree.</p>
+                    </section>
+                </li>
+                <li class="details-item wifi">
+                    <section>
+                        <header>
+                            <div class="left">
+                                <img src="../assets/images/icon-wifi.svg" alt="">
+                                <h3>Wifi</h3>
+                            </div>
+                            <p class="number">02</p>
+                        </header>
+                        <p class="title">Le Soleil <span aria-hidden="true">·</span> Guest</p>
+                        <p class="sub-title">Password below</p>
+                        <p class="description">Network <span>Le Soleil <span aria-hidden="true">·</span> Guest</span>
+                        </p>
+                        <p class="description">Password <span>soleil-2026 <button type="button"
+                                    class="copy-btn">Copy</button></span></p>
+                    </section>
+                </li>
+                <li class="details-item breakfast">
+                    <section>
+                        <header>
+                            <div class="left">
+                                <img src="../assets/images/icon-breakfast.svg" alt="">
+                                <h3>Breakfast</h3>
+                            </div>
+                            <p class="number">03</p>
+                        </header>
+                        <p class="title">Served 8 - 10:30</p>
+                        <p class="sub-title">On the terrace</p>
+                        <p class="description">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free
+                            option? Leave a note
+                            the night before.</p>
+                    </section>
+                </li>
+            </ul>
+        </section>
+    </div>
 
     <script src="index.js"></script>
 </body>
