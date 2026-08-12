@@ -336,6 +336,13 @@ body .right{
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid gray;
+    transition: all 0.3s;
+}
+
+.welcome-card:hover{
+    box-shadow: 20px 20px 3px gray;
+    transform: scale(1.1);
+    z-index: 5;
 }
 
 .welcome-card .sun-img {
@@ -392,6 +399,13 @@ body .right{
     padding: 10px;
     box-shadow: 10px 10px 3px gray;
     border: 1px solid gray;
+    transition: all 0.3s;
+}
+
+.receipt-card:hover{
+    box-shadow: 20px 20px 3px gray;
+    transform: scale(1.1);
+    z-index: 5;
 }
 
 .receipt-card h2 {
@@ -521,6 +535,12 @@ body .right{
     border-radius: 10px;
     background-color: var(--Neutral-100);
     padding: 15px;
+    transition: all 0.3s;
+}
+
+.details-item:hover{
+    transform: translateY(5px);
+    box-shadow: 1px 1px 7px gray;
 }
 
 .details-item header {
