@@ -115,7 +115,7 @@ button:hover {
     top: 0;
     width: 100%;
     z-index: 999;
-    padding: 15px 15px 0;
+    padding: 15px;
     border-bottom: 1px solid var(--Neutral-400);
     background-color: var(--Neutral-200);
 }
@@ -147,7 +147,7 @@ button:hover {
     background-color: inherit;
     flex: 1 1 0;
     overflow: auto;
-    padding: 10px 10px 0;
+    padding: 10px;
     width: 100%;
 }
 
