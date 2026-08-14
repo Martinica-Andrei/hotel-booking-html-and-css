@@ -109,7 +109,7 @@ button:hover {
 ------------------------------------------------------------------ */
 
 #header {
-    position: fixed;
+    position: sticky;
     display: flex;
     flex-direction: column;
     top: 0;
@@ -250,7 +250,7 @@ body .right{
     font-size: 0.75rem;
     color: var(--Neutral-600);
     font-weight: 500;
-    margin-top: 110px;
+    margin-top: 20px;
 }
 
 .booking-status ul {
@@ -626,10 +626,6 @@ body .right{
 @media screen and (min-width:1000px) {
     body{
         display: flex;
-    }
-
-    .booking-status{
-        margin-top: 20px;
     }
 
     .show-menu-btn {
