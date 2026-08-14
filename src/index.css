@@ -219,18 +219,18 @@ button:hover {
     color: var(--Neutral-900);
 }
 
-footer {
+#menu .bottom {
     color: var(--Neutral-700);
     font-family: dm-mono, sans-serif;
-    max-width: 300px;
+    max-width: 200px;
     text-transform: uppercase;
 }
 
-footer br {
+#menu br {
     margin-bottom: 5px;
 }
 
-footer .copyright {
+#menu .copyright {
     margin-bottom: 0;
 }
 
